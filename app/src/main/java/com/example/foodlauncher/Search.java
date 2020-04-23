@@ -467,7 +467,7 @@ class Photo_ {
         "res_id"
 })
 
-class R {
+class R1 {
 
     @JsonProperty("has_menu_status")
     private HasMenuStatus hasMenuStatus;
@@ -635,7 +635,7 @@ class Restaurant {
 class Restaurant_ {
 
     @JsonProperty("R")
-    private R r;
+    private R1 r;
     @JsonProperty("apikey")
     private String apikey;
     @JsonProperty("id")
@@ -718,12 +718,12 @@ class Restaurant_ {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
     @JsonProperty("R")
-    public R getR() {
+    public R1 getR() {
         return r;
     }
 
     @JsonProperty("R")
-    public void setR(R r) {
+    public void setR(R1 r) {
         this.r = r;
     }
 

@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                         startActivity(intent);
                         finish();
                     }
-                }, 3000);
+                }, 2000);
             }
         });
     }

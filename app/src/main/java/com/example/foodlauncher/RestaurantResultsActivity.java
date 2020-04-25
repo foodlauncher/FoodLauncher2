@@ -52,7 +52,7 @@ public class RestaurantResultsActivity extends AppCompatActivity {
 
         ApiSearchInterface searchApi = retrofit.create(ApiSearchInterface.class);
 
-        Call<Search> call = searchApi.getSearchResult(apiKey, latitude, longitude, DEFAULT_COUNT);
+        Call<Search> call = searchApi.getResultBy(apiKey, latitude, longitude, DEFAULT_COUNT, sortByRealDistance);
 
         call.enqueue(new Callback<Search>() {
             @Override
